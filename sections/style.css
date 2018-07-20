@@ -1,0 +1,168 @@
+#top {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+}
+
+#subtitle {
+  color: white;
+  font-weight: 450;
+  text-shadow: 3px 3px 5px black;
+
+}
+
+.title {
+  font-size: 45px;
+  font-weight: bold;
+  padding-bottom: 10px;
+
+}
+
+@media screen and (min-width: 600px) {
+  .experince {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "words1 img1"
+    "words2 img2"
+    "words3 img3"
+    ;
+  }
+}
+@media screen and (max-width: 480px) {
+  .experince {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "img1"
+    "words1"
+    "img2"
+    "words2"
+    "img3"
+    "words3"
+    ;
+  }
+}
+
+.words1 {
+  grid-area: words1;
+}
+
+.img1 {
+  grid-area: img1;
+
+}
+.words1 {
+  grid-area: words1;
+}
+
+.img1 {
+  grid-area: img1;
+
+}
+.words2 {
+  grid-area: words2;
+}
+
+.img2 {
+  grid-area: img2;
+
+}
+.words3 {
+  grid-area: words3;
+}
+
+.img3 {
+  grid-area: img3;
+
+}
+
+.workplace, .duration, .role, .description, .item1, .item2 {
+  text-align: left;
+}
+
+.workplace {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.duration {
+  font-style: italic;
+}
+
+.role {
+  font-weight: 400;
+}
+
+.description {
+  font-size: 20px;
+}
+
+#biru {
+  width: 250px;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .kotak {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "shell item1"
+    "news item2"
+    ;
+  }
+
+}
+@media screen and (max-width: 599px) {
+  .kotak {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "shell"
+    "item1"
+    "news"
+    "item2"
+    ;
+  }
+
+}
+
+.shell {
+  grid-area: shell;
+}
+.shell, #shell {
+  width: 600px;
+  height: auto;
+}
+
+.item1 {
+  grid-area: item1;
+
+}
+.news {
+  grid-area: news;
+}
+
+.news, #news {
+  width: 600px;
+  height: auto;
+}
+
+.item2 {
+  grid-area: item2;
+
+}
+
+.name {
+  font-weight: bold;
+}
